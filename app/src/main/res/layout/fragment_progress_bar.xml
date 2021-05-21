@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstrainBoxProgress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProgressBarFragment">
+
+    <TextView
+        android:id="@+id/pb_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нет будильников!"
+        android:textColor="@color/colorOne"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/FrameLayot"
+        app:layout_constraintEnd_toEndOf="@+id/FrameLayot"
+        app:layout_constraintStart_toStartOf="@+id/FrameLayot"
+        app:layout_constraintTop_toTopOf="@+id/FrameLayot"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <TextView
+        android:id="@+id/pb_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="--:--"
+        android:textColor="@color/colorOne"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/pb_tv_desc"
+        app:layout_constraintStart_toStartOf="@+id/pb_tv_desc"
+        app:layout_constraintTop_toBottomOf="@+id/pb_tv_desc" />
+
+    <TextView
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:shadowColor="@color/purple_200"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/FrameLayot"
+        app:layout_constraintTop_toBottomOf="@+id/pb_tv_time" />
+
+    <TextView
+        android:id="@+id/twelve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/purple_200"
+        android:text="24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/FrameLayot"
+        app:layout_constraintTop_toBottomOf="@+id/pb_tv_time" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:foregroundGravity="center"
+            android:rotation="-135"
+            android:rotationY="0"
+            app:cpb_background_progressbar_color="#b6bbd8"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progress="0"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progress_max="32"
+            app:cpb_progressbar_color="@color/colorOne"
+            app:cpb_progressbar_width="10dp"
+            app:cpb_round_border="false" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

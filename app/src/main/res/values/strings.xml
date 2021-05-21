@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Rise</string>
+    <string name="date">Вс, 12 апр</string>
+    <string name="time">12:00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shake">Тряси, чтобы отключить!</string>
+    <string name="off">Выключить!</string>
+
+
+</resources>
