@@ -11,3 +11,6 @@ Rise - мобильное приложение на платформе android �
 
 Полный обзор приложения по ссылке:
 https://disk.yandex.ru/d/RP-Fb-3hDXtz3w
+
+![image](https://github.com/user-attachments/assets/daec4559-3359-4c31-99b7-a1ab88dae35d)
+
